@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/css'>
+    <link rel='stylesheet' href='/client/styles.css'/>
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>When we lose our principles, we invite chaos.</h1>
+
+    <div class='btn-container'>
+        <a class='select' href='/client/index.html'><button class='btn-select'>Start Over</button></a>
+    </div>
+
+	<h2>Send us feedback!</h2>
+	<section>
+		<form>
+			<input placeholder="Feedback here" />
+			<button>Submit</button>
+		</form>
+	</section>
+	<ul></ul>
+	<aside id="message"></aside>
+
+	<h2>How did you hear about us?</h2>
+			<section class='label-container'>
+				<div class='label-holder'>
+					<input type='checkbox' id='google' name='google'>
+					<label for='google'>Google</label>
+				</div>
+				<div class='label-holder'>	
+					<input type='checkbox' id='friend' name='friend'>
+					<label for='friend'>A Friend</label>
+				</div>
+				<div class='label-holder'>
+					<input type='checkbox' id='other' name='other'>
+					<label for='other'>Other</label>
+				</div>
+			</section>	
+
+
+<script src='./feedback.js'></script>
+</body>
+</html>

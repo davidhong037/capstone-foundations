@@ -110,6 +110,16 @@ img {
     border: 2px solid white;
 }
 
+#treasure {
+    width: 600px;
+}
+
+.treasure-photo {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
 form, ul {
     display: grid;
     place-items: center;
@@ -119,7 +129,7 @@ form, ul {
 
 #carry-items, span {
     color: black;
-    font-size: 22px;
+    font-size: 24px;
     text-align: center;
 }
 

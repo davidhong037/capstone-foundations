@@ -1,4 +1,9 @@
 const message = document.querySelector('#message')
+const formList = document.querySelector('form')
+const signUp = document.querySelector('.sign-up')
+const signatureInput = document.querySelector('input')
+const acceptBtn = document.querySelector('#accept-quest')
+const footer = document.querySelector('footer')
 
 function giveFeedback(event){
     event.preventDefault()
@@ -18,15 +23,18 @@ function giveFeedback(event){
     list.appendChild(inputList)
 
     inputField.value = ''
-
 }
+
 function deleteFeedback(event){
     event.target.parentNode.remove()
-    message.textContent = `${event.target.parentNode.childNodes[0].textContent} deleted!`
+} 
 
-    revealMessage()
+function emailSubmitHandler() {
+    const confirmationMsg = document.createElement('p')
+    confirmationMsg.textContent = "Thank you for signing up for our next quest!"
+    signUp.remove()
+    footer.appendChild(confirmationMsg)
 }
 
-
-const formList = document.querySelector('form')
-formList.addEventListener('submit', addMovie)
+formList.addEventListener('submit', giveFeedback)
+acceptBtn.addEventListener('click', emailSubmitHandler);

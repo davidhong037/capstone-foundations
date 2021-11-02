@@ -15,31 +15,46 @@
         <a class='select' href='/client/index.html'><button class='btn-select'>Start Over</button></a>
     </div>
 
-	<h2>Send us feedback!</h2>
+	<h2>What would you like to carry on your next quest?</h2>
 	<section>
 		<form>
-			<input placeholder="Feedback here" />
-			<button>Submit</button>
+			<input id='carry-items' placeholder="Type items here" />
+			<button class='btn-select'>Submit</button>
 		</form>
 	</section>
 	<ul></ul>
 	<aside id="message"></aside>
 
-	<h2>How did you hear about us?</h2>
-			<section class='label-container'>
+	<h2>How did you hear about our faction?</h2>
+		<section class='label-container'>
+			<div class='all-divs'>
 				<div class='label-holder'>
-					<input type='checkbox' id='google' name='google'>
-					<label for='google'>Google</label>
+					<input type='checkbox' id='google' name='pirate'>
+					<label for='google'>A Pirate from the Covenant</label>
 				</div>
 				<div class='label-holder'>	
 					<input type='checkbox' id='friend' name='friend'>
-					<label for='friend'>A Friend</label>
+					<label for='friend'>A member from your faction</label>
+				</div>
+				<div class='label-holder'>
+					<input type='checkbox' id='town-board' name='town-board'>
+					<label for='other'>Notice on the Town Board</label>
 				</div>
 				<div class='label-holder'>
 					<input type='checkbox' id='other' name='other'>
 					<label for='other'>Other</label>
-				</div>
-			</section>	
+				</div>	
+			</div>
+		</section>	
+
+	<footer>
+		<h2>Sign up for our next adventure into the abyss!</h2>
+		<section class="sign-up">
+			<input type="text"
+				placeholder = "Your signature"/>
+			<button class='btn-select' id='accept-quest'>Accept Quest</button>
+		</section>
+	</footer>
 
 
 <script src='./feedback.js'></script>

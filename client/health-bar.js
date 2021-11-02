@@ -7,7 +7,12 @@ $( document ).ready(function() {
     $('.hit').on('click', function(){
       amt = amt - 10;
       $('.healthBarValue').css('width', amt + '%' )
+      if(amt < 0){
+        alert('You have slain The Butcher!')
+      }
     });
+    
+    
   }
 
   attack();

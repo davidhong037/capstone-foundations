@@ -4,12 +4,12 @@ This application showcases a very basic functionality of a game that allows the 
 
 # technologies used
 
-HTML
-CSS
-Javascript
-JQuery
-Express
-Cors
+* HTML
+* CSS
+* Javascript
+* JQuery
+* Express
+* Cors
 
 # author
 David Hong is a web developer in training in New York City.
